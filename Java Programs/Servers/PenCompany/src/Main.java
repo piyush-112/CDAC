@@ -64,6 +64,8 @@ public class Main {
                         if (p.brand.equals(updateBrand) && p.material.equals(updateMaterial) && p.color.equals(updateColor) && p.inkColor.equals(updateInkColor)) {
                             p.stock = newQuantity;
                             p.stockUpdateDate = LocalDate.now();
+                            //for easier status display
+                            System.out.println("Updating...");
                             System.out.println("Stock updated successfully");
                             break;
                         }
