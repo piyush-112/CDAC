@@ -8,10 +8,13 @@ public class Numbertable{
         int num = sc.nextInt();
         int range=10;
         int i=1;
-
-        while(i<=range){
-        System.out.println("The table of" + num + " is" + i*num);
-        i++;
+        //using the for loop
+        for(int i=0;i<=10;i++){
+         System.out.println("The table of" + num + " is" + i*num);
+        }
+        // while(i<=range){
+        // System.out.println("The table of" + num + " is" + i*num);
+        // i++;
     }
 }
 }
