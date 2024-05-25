@@ -28,7 +28,7 @@
 //         }
 //     }
 // }
-
+//usefull
 import java.util.Scanner;
 
 public class primefactorization {
