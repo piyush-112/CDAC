@@ -10,12 +10,12 @@ public static void main(String[] args) {
 	char c=10;
 	boolean bl=true;
 	
-	b=s;
+	b=(byte)s;
 	s=b;
 	l=b;
 	f=b;
-	c=b;
-	bl=b;
+	c=(char)b;
+	bl=bl;
 	
 }
 }
