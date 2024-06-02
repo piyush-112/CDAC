@@ -1,5 +1,5 @@
 
-class Rectangle{
+class Rectangle1{
 		public double length;
 		public double breadth;
 		
@@ -24,7 +24,7 @@ class Rectangle{
 public class rectangleclassusintmethods {
 public static void main(String[] args) {
 	
-	Rectangle r=new Rectangle();
+	Rectangle1 r=new Rectangle1();
 	r.length=10.5;
 	r.breadth=5.5;
 	
