@@ -59,7 +59,6 @@ public static void main(String[] args) {
 
 
 
-//    
 //    public String getSubID(){return subID;}
 //    public String getName(){return name;}
 //    public int getMaxMarks(){return maxMarks;}
