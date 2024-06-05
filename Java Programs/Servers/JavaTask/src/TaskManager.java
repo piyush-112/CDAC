@@ -1,3 +1,7 @@
+import java.io.ObjectInputFilter.Status;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class TaskManager {
     private static ArrayList<Task> tasks = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
