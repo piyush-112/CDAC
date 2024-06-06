@@ -55,6 +55,7 @@ public class primefactorization {
                 while(n%x==0){
                     System.out.println(i);
                     x = x*i;
+                    
                 }
             }
         }
