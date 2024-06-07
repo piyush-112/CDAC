@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <h2>Calculator</h2>
+
+    <form method="get" onsubmit="return calculate(event)">
+        <label for="num1">Enter First num: </label>
+        <input type="text" name="num1" id="num1"> <br>
+
+        <label for="num2">Enter Second num: </label>
+        <input type="text" name="num2" id="num2"> <br>
+
+        <button type="submit" value="+" id="+" >+</button>
+        <button type="submit" value="-" id="-">-</button>
+        <button type="submit" value="*" id="*" >*</button>
+        <button type="submit" value="/" id="/">/</button>
+
+    </form>
+    <div class="result">
+        
+    </div>
+</body>
+</html>

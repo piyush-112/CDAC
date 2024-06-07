@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+          background-color: pink;
+        }
+        </style>
+</head>
+<body>
+    <table border cellspacing="0">
+        <!-- <tr height="16" hidden>
+            <td colspan="16">
+            </td>
+            <td colspan="16">
+            </td>
+            <td colspan="16">
+            </td>
+        </tr> -->
+        <tr>
+            <td style="padding-right: 100px;">
+                <label for="name">Name</label>
+            </td>
+            <td style="padding-right: 200px;">
+                <input type="text" id="name" name="name">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-right: 100px;">
+                <label for="code">Employee Code</label>
+            </td>
+            <td style="padding-right: 200px; width: 10px;">
+                <input type="text" id="code" name="code" size="5px">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-right: 100px;">
+                <label for="code">Department</label>
+            </td>
+            <td style="padding-right: 200px;">
+                <input type="radio" name="btn" id="admin">
+                <label for="admin">ADMIN</label>
+                <div>
+                    <input type="radio" name="btn" id="hr">
+                    <label for="hr">HR</label>
+                </div>
+                <div>
+                    <input type="radio" name="btn" id="technical">
+                    <label for="technical">TECHNICAL</label>
+                </div>
+                <div>
+                    <input type="radio" name="btn" id="accounts">
+                    <label for="accounts">ACCOUNTS</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-right: 100px;">
+                <label for="date">Date of Joining</label>
+            </td>
+            <td>
+                <input type="date" id="date" name="date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="address">Address</label>
+            </td>
+            <td>
+                <textarea name="address" id="address" rows="4" cols="50"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="tp">Training Programs Attended</label>
+            </td>
+            <td>
+                <input type="checkbox" name="html/dhtml" id="html/dhtml">
+                <label for="html">HTML/DHTML</label>
+                <div>
+                    <input type="checkbox" name="java" id="java">
+                    <label for="java">JAVA</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="client/server" id="client/server">
+                    <label for="client/server">CLIENT/SERVER</label>
+                </div>
+                <div>
+                    <input type="checkbox" name=".net" id=".net">
+                    <label for=".net">.NET</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="programs">Training Programs need to attend</label>
+            </td>
+            <td>
+                <select name="programs" id="programs" size="2px">
+                <option value="javascript">JAVASCRIPT</option>
+                <option value="jstruts">JSTRUTS</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="info">Send the information at</label>
+            </td>
+            <td>
+                <a href="empInfo@patni.com">empInfo@patni.com</a>
+            </td>
+        </tr>
+</table>
+</body>
+</html>

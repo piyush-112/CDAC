@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return stringFunctions()">
+        <label for="string">Enter String: </label>
+        <input type="text" name="string" id="string"><br><br>
+
+        <label for="substring">Enter Sub String: </label>
+        <input type="text" name="substring" id="substring"><br><br>
+
+        <label for="replacestring">Replace with String: </label>
+        <input type="text" name="replacestring" id="replacestring"><br><br>
+
+        <input type="radio" name="search" id="search">
+        <label for="search">Search substring in main string </label>
+
+        <input type="radio" name="uppercase" id="uppercase">
+        <label for="uppercase">To Upper Case </label>
+
+        <input type="radio" name="lowercase" id="lowercase">
+        <label for="lowercase">To Lower Case </label>
+
+        <input type="radio" name="trimspaces" id="trimspaces">
+        <label for="trimspaces">Trim spaces </label>
+
+        <input type="radio" name="Concatenate" id="Concatenate">
+        <label for="Concatenate">Concatenate </label>
+
+        <input type="radio" name="Replace" id="Replace">
+        <label for="Replace">Replace </label><br><br>
+
+        <button type="submit">Submit Query</button>
+
+    </form>
+</body>
+</html>

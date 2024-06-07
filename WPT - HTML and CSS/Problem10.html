@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Appointment Scheduler</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./rangeslider.css">
+    </head>
+    <body>
+       <h2>Appointment Scheduler</h2>
+       <form method="post">
+       <fieldset style="width: 50%;">
+        <legend>Personal Information</legend>
+            <div>
+                <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" required></input>
+        </div><br>
+        <div>
+            <label for="no">Telephone Number</label><br>
+            <input type="number" name="telno" id="telno" required minlength="10" maxlength="10"></input>
+        </div><br>
+        <div>
+            <label for="mail">E-mail address</label><br>
+            <input type="email" name="mail" id="mail"></input>
+        </div><br>
+        <div>
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" name="dob" id="dob" > </input>
+        </div>
+       </fieldset><br>
+       
+       <fieldset style="width: 50%;">
+        <legend>Appiotment Request</legend>
+            <div>
+            <label for="name">What is the reason for your visit?</label><br>
+            <input type="text" name="name" id="name" placeholder="Select or type your reason"required ></input>
+        </div><br>
+        <div class="slidecontainer">
+            <label for="painlvl">Current pain level</label><br>
+            <input type="range" name="pain" id="painlvl" class="slider" value="5" min="1" max="10" required  ></input>
+        </div><br>
+        <div>
+            <label for="dob">Preferred Date</label><br>
+            <input type="date" name="dob" id="dob"  required> </input>
+        </div><br>
+        <div>
+            <label for="timeappt">Preferred Time</label><br>
+            <input type="time" name="appttime" id="timeappt" required> </input>
+        </div>
+
+       </fieldset><br>
+
+       <button type="submit"> Submit </input>
+    </form>
+        <script src="" async defer></script>
+    </body>
+</html>

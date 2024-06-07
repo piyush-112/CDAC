@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <script src="index.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <label for="empid">Enter Employee Id: </label>
+        <input type="text" id="empid" name="empid" placeholder="Enter id" value="" required><br><br>
+
+        <label for="empname">Enter Employee Name: </label>
+        <input type="text" id="empname" name="empname" placeholder="Enter name" value="" required><br><br>
+
+        <label for="salary">Enter Salary: </label>
+        <input type="text" id="salary" name="salary" placeholder="Enter salary" value="" required><br><br><br>
+
+        <button type="button" onclick="addEmployeeDetails()" >Add Employee</button>
+        <button type="button" onclick="displayEmployeeDetails()" style="margin-left: 50px;">Display Employees</button>
+
+    </form>
+    <div id="details"></div>
+   
+</body>
+</html>

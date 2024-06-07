@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <hr>
+    <h1>*******Calculate Compound Interest********</h1>
+    <hr>
+    <br>
+    <form method="get" onsubmit="return calculateCompoundInterest(event)">
+        <table>
+            <tr>
+                <td>Principal</td>
+                <td>- <input type="text" name="Principal" id="Principal"> rs </td>
+            </tr>
+            <tr>
+                <td>Rate of Interest</td>
+                <td>- <input type="text" name="rate" id="rate"> % </td>
+            </tr>
+            <tr>
+                <td>Period</td>
+                <td>- <input type="text" name="Period" id="Period"> yr </td>
+            </tr>
+            <tr>
+                <td>Compound Interest -</td>
+                <td class="Compound"> </td>
+            </tr>
+        </table>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+
+</html>

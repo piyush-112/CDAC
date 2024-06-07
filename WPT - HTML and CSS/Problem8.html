@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <header>
+            <h4>Sachin Mishra &emsp; Vaibhav Singh &emsp; Saurabh Maskade &emsp; <strike>Sahil Kamble</strike></h4>
+        </header>
+        <div id="Note">
+            Note: All fields Marked by * are mandatory<br>
+            Select all problems you faced while purchasing items<br>
+            To add more details use description box<br>
+        </div>
+        <hr color="grey" size="3px" width="100%">
+            <!-- <div style="width:40%;"></div> -->
+            <fieldset style="width: fit-content;">
+                <legend>Problems Category</legend>
+            <input type="checkbox" name="problems" id="technical" value="technical">
+            <label for="technical">Technical issues</label><br>
+            <input type="checkbox" name="problems" id="available" value="available">
+            <label for="available">Product issues</label><br>
+            <input type="checkbox" name="problems" id="info" value="info">
+            <label for="info">Other</label><br>
+        </fieldset>
+        </div>
+        <div>
+            <form method="post">
+            <table style="width: 40%; height: 90%; border: 2px solid black;" border="2px" >
+                
+                    <tr>
+                        <td>Username: <span style="color: red;">*</span></td>
+                        <td><input type="text" name="unm" id="unm" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email: <span style="color: red;">*</span></td>
+                        <td><input type="email" name="unm" id="unm" required></td>
+                    </tr>
+                    <tr>
+                        <td>Location:</td>
+                        <td>
+                            <select>
+                                <option value="Pune">Pune</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Nashik">Nashik</option>
+                                <option value="Banglore">Banglore</option>
+                                <option value="Nagpur">Nagpur</option>
+                          </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td> <input type="text" name="mob" id="mob" maxlength="10" minlength="10"> </td>
+                    </tr>
+                    <tr>
+                        <td>Description:</td>
+                        <td>  <textarea rows="5" cols="70"></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td>Notification:</td>
+                        <td><textarea rows="5" cols="70"></textarea> </td>
+                    </tr>
+        <br>
+            </table><br>
+            <button type="submit" name="btn" id="btn" value="submit">Submit</button>
+        </form><br>
+         <a href="mailto:xyz.gmail.com?subject=feed for website&cc:abc@gmail.com">Contact us</a>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

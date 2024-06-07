@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 22</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script>
+        var foundIndexes = [];
+        $(document).ready(function(){
+            var q = $('#mainContent > div');
+            $.each(q,function(indexes, values){
+                var a = $(this).text();
+                if(a.indexOf('training') != -1){
+                    foundIndexes.push(indexes+1);
+                }
+            })
+            if(foundIndexes.length == 0){
+                $('#res').html('Not Found in any Div tags');
+            }
+            else{
+                $('#res').html('Found training at div(s) : ' + foundIndexes.join(', '));
+            }
+        })
+    </script>
+</head>
+<body>
+    <div id="mainContent">
+        <div id="div1">Hello trainer,</div>
+        <div id="div2">keep up with training</div>
+        <div id="div3">always</div>
+        <div id="div4">Training!</div>
+        <div id="div5">training!</div>
+    </div>
+    <div id="res"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 19</title>
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#number').keyup(function (e) {
+                if (e.which == 13) {
+                    var num = $('#number').val();
+                    if (num < 0 || num > 1000) {
+                        $('#res').html('Entered number is out of range');
+                    }
+                    else {
+                        var ans = num;
+                        var sn = 0;
+                        while (ans > 0) {
+                            var r = ans % 10;
+                            ans = Math.trunc(ans / 10);
+                            sn += r;
+                        }
+                        $('#res').html('Sum of the digits of ' + num + ' is ' + sn);
+                    }
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="mainContent">
+        <div id="inputInfo">
+            <label for="num1">Enter a +ve no less than 1000 :</label>
+            <input type="text" name="num1" id="number">
+        </div>
+        <div id="res"></div>
+    </div>
+</body>
+
+</html>

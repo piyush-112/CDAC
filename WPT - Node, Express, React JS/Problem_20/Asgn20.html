@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 20</title>
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        var arr = ['John', 'Steve', 'Ben', 'Damon', 'Ian'];
+        $(document).ready(function () {
+            $('#members').html('<h2>Members of my Group are</h2>')
+            $('#members').append(arr.toString().toUpperCase());
+            $('#members').css({'border':'1px solid blue','width':'15vw','padding':'0.5vw'});
+        })
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <div id="members"></div>
+    </div>
+</body>
+
+</html>
