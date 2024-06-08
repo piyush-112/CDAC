@@ -1,5 +1,5 @@
 // import java.util.Scanner;
-
+//
 // public class primefactorization {
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(system.in);
