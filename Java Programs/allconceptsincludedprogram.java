@@ -34,7 +34,7 @@ class subject{
 	}
 	
 	public boolean isQualified() {
-		return marksObtain>=maxMarks/10*4;
+		 marksObtain>=maxMarks/10*4;
 	}
 	public String toString() {
 		return "\nSubject:"+subID+"\nName:"+name+"\nMarks Obtained:"+marksObtain;
