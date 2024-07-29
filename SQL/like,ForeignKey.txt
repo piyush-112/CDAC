@@ -1,0 +1,33 @@
+Assignment number -5;
+//
+Q.1=
+mysql> create table emp(id int not null primary key auto_increment,name varchar(50),dept_id int,birth DATE );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into emp (name,dept_id,birth) values ("John",1,'1993-02-07'),("Gal",4,'1992-09-11'),("Jakey",2,'1990-08-31'),("Rama",1,'1994-12-09'),("Maria",4,'1993-10-09');
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> create table dept(dept_id int primary key,dept_name varchar(50),dept_block varchar(10));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into dept(dept_id,dept_name,dept_block)values(2,"Information Tech","C-Block"),(3,"Mechanical","A-Block"),(4,"Electrical Communication","D-Block");
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> alter table emp add foreign key (dept_id) references dept(dept_id);
+Query OK, 6 rows affected (0.04 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+mysql> select name,birth,dept_name,dept_block from emp inner join dept on emp.dept_id=dept.dept_id;
+
+
+Q2==
+mysql> select * from emp where name like '____a';
+
+Q3==mysql>
+mysql> select YEAR(CURDATE()) -YEAR(birth) as age from emp;
+ SELECT *, DATE_FORMAT(FROM_DAYS(DATEDIFF(NOW(), birth)), '%Y') + 0 AS age FROM emp;
+https://www.scaler.com/topics/how-to-calculate-age-from-date-of-birth-in-sql/
+
+

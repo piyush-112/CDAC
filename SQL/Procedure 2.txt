@@ -1,0 +1,190 @@
+Assignment No. 10
+
+1) Write a procedure to find the factorial of the number.
+Hint: use only repeat loop
+
+delimiter &&
+create procedure find_Fact(num int)
+begin
+    declare fact int default 1;
+    repeat
+         set fact=fact*num;
+         set num=num-1;
+    until num=1
+    end repeat;
+    select fact;
+end &&
+delimiter ;
+
+ysql> delimiter &&
+mysql> create procedure find_Fact(num int)
+    -> begin
+    ->     declare fact int default 1;
+    ->     repeat
+    ->          set fact=fact*num;
+    ->          set num=num-1;
+    ->     until num=1
+    ->     end repeat;
+    ->     select fact;
+    -> end &&
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> delimiter ;
+mysql> call find_fact(5);
++------+
+| fact |
++------+
+|  120 |
++------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+
+2) Create a procedure to find the sum of digits of the number passed as
+parameter to it.
+Hint: use while loop
+
+delimiter &&
+create procedure sum_of_Digit1(num int)
+begin
+    declare sum int default 0;
+    declare dnum int default 0;
+    while num !=0 do
+        set dnum=num % 10;
+        set sum = sum + dnum;
+        set num=truncate(num / 10,0);
+    end while;
+    select sum as 'Sum of Digit is';
+end &&
+delimiter ;
+
+mysql> create procedure sum_of_Digit1(num int)
+    -> begin
+    ->     declare sum int default 0;
+    ->     declare dnum int default 0;
+    ->     while num !=0 do
+    ->         set dnum=num % 10;
+    ->         set sum = sum + dnum;
+    ->         set num=truncate(num / 10,0);
+    ->     end while;
+    ->     select sum as 'Sum of Digit is';
+    -> end &&
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> delimiter ;
+mysql> call sum_of_digit1(45);
++-----------------+
+| Sum of Digit is |
++-----------------+
+|               9 |
++-----------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> call sum_of_digit1(112);
++-----------------+
+| Sum of Digit is |
++-----------------+
+|               4 |
++-----------------+
+1 row in set (0.00 sec)
+
+
+3) Write a procedure to print the Fibonacci sequence using any kind of the loop.
+e.g. 0, 1, 1, 2, 3, 5, 8....
+mysql> DELIMITER &&
+mysql> 
+mysql> CREATE PROCEDURE fibo_series(num INT)
+    -> BEGIN
+    ->     DECLARE num1 INT DEFAULT 0;
+    ->     DECLARE num2 INT DEFAULT 1;
+    ->     DECLARE sum INT DEFAULT 0;
+    ->     DECLARE result VARCHAR(255) DEFAULT '';
+    -> 
+    ->     SET result = CONCAT(result, CAST(num1 AS CHAR), ' ', CAST(num2 AS CHAR), ' ');
+    -> 
+    ->     WHILE num > 0 DO
+    ->         SET sum = num1 + num2;
+    ->         SET num1 = num2;
+    ->         SET num2 = sum;
+    ->         SET result = CONCAT(result, CAST(sum AS CHAR), ' ');
+    ->         SET num = num - 1;
+    ->     END WHILE;
+    -> 
+    ->     SELECT result;
+    -> END &&
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> 
+mysql> DELIMITER ;
+mysql> call fibo_series(10);
++-------------------------------+
+| result                        |
++-------------------------------+
+| 0 1 1 2 3 5 8 13 21 34 55 89  |
++-------------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+4) Write a procedure to print all the odd and even numbers separately using
+same procedure.
+
+delimiter &&
+create procedure even_odd_betrange(num int)
+begin
+     declare resEven varchar(255) default '';
+     declare resOdd varchar(255) default '';
+     declare i int default 1;
+      
+     while i <= num do
+          if (i % 2 = 0) then
+              set resEven = concat(resEven,cast(i as char)," ");
+          else
+              set resOdd = concat(resOdd,cast(i as char)," ");
+          end if;
+          set i = i + 1s;          
+          select resEven as 'Even Numbers',resOdd as 'Odd Numbers';
+end &&
+delimiter ;
+
+mysql> DELIMITER &&
+mysql> 
+mysql> CREATE PROCEDURE even_odd_betrange(num INT)
+    -> BEGIN
+    ->     DECLARE resEven VARCHAR(255) DEFAULT '';
+    ->     DECLARE resOdd VARCHAR(255) DEFAULT '';
+    ->     DECLARE i INT DEFAULT 1;
+    -> 
+    ->     WHILE i <= num DO
+    ->         IF (i % 2 = 0) THEN
+    ->             SET resEven = CONCAT(resEven, CAST(i AS CHAR), ' ');
+    ->         ELSE
+    ->             SET resOdd = CONCAT(resOdd, CAST(i AS CHAR), ' ');
+    ->         END IF;
+    ->         SET i = i + 1;
+    ->     END WHILE;
+    -> 
+    ->     SELECT resEven AS 'Even Numbers', resOdd AS 'Odd Numbers';
+    -> END &&
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> 
+mysql> DELIMITER ;
+mysql> call even_odd(10);
+ERROR 1305 (42000): PROCEDURE collegeAK.even_odd does not exist
+mysql> call even_odd_betrange(10);
++--------------+-------------+
+| Even Numbers | Odd Numbers |
++--------------+-------------+
+| 2 4 6 8 10   | 1 3 5 7 9   |
++--------------+-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+              
+              
+          

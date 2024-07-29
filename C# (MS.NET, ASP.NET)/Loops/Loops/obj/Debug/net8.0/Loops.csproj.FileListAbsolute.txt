@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\obj\Debug\net8.0\Loops.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\obj\Debug\net8.0\Loops.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\obj\Debug\net8.0\Loops.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\obj\Debug\net8.0\Loops.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\obj\Debug\net8.0\Loops.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\bin\Debug\net8.0\Loops.exe
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\bin\Debug\net8.0\Loops.deps.json
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\bin\Debug\net8.0\Loops.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\bin\Debug\net8.0\Loops.dll
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\bin\Debug\net8.0\Loops.pdb
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\obj\Debug\net8.0\Loops.dll
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\obj\Debug\net8.0\refint\Loops.dll
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\obj\Debug\net8.0\Loops.pdb
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\obj\Debug\net8.0\Loops.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\Loops\Loops\obj\Debug\net8.0\ref\Loops.dll

@@ -1,0 +1,101 @@
+show databases;
+create database college;
+use college;
+create table student(roll int not null ,name varchar(50),class char(10),age int);
+desc student;
+insert into student(roll,name,class,age) values(1,"Ram","BE",23),(2,"Lakshamana","FY",20),(3,"Bharat","FY",21),(4,"Karna","TY",22),(5,"Shatrugna","BE",23);
+insert into student(roll,name,class,age) values(6,"Hanuman","SY",24),(7,"Shabari","TY",25);
+select * from student;
+
+#1) Create a procedure to pass the range of marks as input and print names of the students who lies in the range.
+
+delimiter &&
+create procedure m_range1(in a int,in b int)
+begin
+select name from student where marks between a and b;
+end &&
+delimiter ;
+
+mysql> call m_range1(70,80);
++-------+
+| name  |
++-------+
+| shree |
+| soham |
+| sam   |
++-------+
+3 rows in set (0.00 sec)
+
+Query to show the name of the created procedure in given selected database;
+show procedure status where db='college';
+
+#2) Create a procedure to display the summary table of the student record
+   including sum, average, minimum and maximum of marks.
+   
+   delimiter &&
+   create procedure s_table()
+   begin 
+   select sum(marks) as Sum,avg(marks) as Average,min(marks) as minumun,max(marks)as maximun from student;
+   end &&
+   
+   delimiter;
+   mysql> call s_table;
++------+---------+---------+---------+
+| Sum  | Average | minumun | maximun |
++------+---------+---------+---------+
+|  407 | 81.4000 |      78 |      88 |
++------+---------+---------+---------+
+1 row in set (0.00 sec)
+
+
+#3) Create a procedure to input the roll number of student and output the marks of the same.
+
+delimiter &&
+create procedure r_marks(in r int)
+begin
+select marks from student where roll=r;
+end &&
+
+delimeter ;
+mysql> call r_marks(4);
++-------+
+| marks |
++-------+
+|    78 |
++-------+
+1 row in set (0.00 sec)
+
+
+4) Create a procedure to input the minimum and maximum roll number and
+output the average of the marks in the given range of roll numbers.
+delimiter &&
+create procedure minmax(in r1 int,in r2 int)
+begin
+select avg(marks) from student where roll between r1 and r2;
+end &&
+delimiter ;
+
+mysql> call minmax(2,4);
++------------+
+| avg(marks) |
++------------+
+|    82.6667 |
++------------+
+1 row in set (0.00 sec)
+
+5) Write a procedure to find the count of students whose marks are below 70%
+delimiter &&
+create procedure c_marks()
+begin
+select count(marks) from student where marks<70;
+end &&
+mysql> delimiter ;
+mysql> call c_marks;
++--------------+
+| count(marks) |
++--------------+
+|            0 |
++--------------+
+1 row in set (0.01 sec)
+
+

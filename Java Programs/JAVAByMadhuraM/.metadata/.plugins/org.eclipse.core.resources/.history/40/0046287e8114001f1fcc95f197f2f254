@@ -1,0 +1,41 @@
+package Basics;
+
+import java.util.*;
+
+public class Armstrongnum {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int num = sc.nextInt();
+		int originalNum = num;
+		int sum = 1;
+		int count = 0;
+		while (originalNum > 0) {
+			count++;
+			originalNum = originalNum / 10;
+		}
+		originalNum = num;
+		while (num > 0) {
+			int digit = num % 10;
+
+			int power = 1;
+			for (int i = 0; i < count; i++) {
+				power *= count;
+			}
+			sum += power;
+			num = num / 10;
+		}
+
+		System.out.println(sum);
+
+		if (sum == originalNum) {
+			System.out.println("Armstrong");
+		} else {
+			System.out.println("Not Armstrong");
+		}
+
+		// Close the scanner to avoid resource leaks
+		sc.close();
+	}
+}

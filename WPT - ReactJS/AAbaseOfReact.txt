@@ -1,0 +1,20 @@
+
+/*
+To create the app with vite
+> npm create vite@latest
+> project name:abc-app
+> select a framework: React
+> select the javascript
+> cd abc-app
+> npm install
+> npm run dev
+*/
+
+/*
+TO install the Bootstrap in our project:
+>npm i bootstarp@4.6
+>In main.jsx > import "bootstrap/dist/css/bootstrap.min.css";
+> To check > npm run dev ==you saw that ui gets change
+
+to use any component just go to the bootstrap type coponent name copy its code and just paste into the app.jsx
+*/

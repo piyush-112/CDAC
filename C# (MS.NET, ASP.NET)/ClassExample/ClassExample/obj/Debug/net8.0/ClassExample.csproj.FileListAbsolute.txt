@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\bin\Debug\net8.0\ClassExample.exe
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\bin\Debug\net8.0\ClassExample.deps.json
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\bin\Debug\net8.0\ClassExample.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\bin\Debug\net8.0\ClassExample.dll
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\bin\Debug\net8.0\ClassExample.pdb
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\obj\Debug\net8.0\ClassExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\obj\Debug\net8.0\ClassExample.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\obj\Debug\net8.0\ClassExample.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\obj\Debug\net8.0\ClassExample.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\obj\Debug\net8.0\ClassExample.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\obj\Debug\net8.0\ClassExample.dll
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\obj\Debug\net8.0\refint\ClassExample.dll
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\obj\Debug\net8.0\ClassExample.pdb
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\obj\Debug\net8.0\ClassExample.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\ClassExample\ClassExample\obj\Debug\net8.0\ref\ClassExample.dll

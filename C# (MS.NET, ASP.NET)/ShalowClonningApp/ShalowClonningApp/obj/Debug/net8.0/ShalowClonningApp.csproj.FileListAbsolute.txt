@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\bin\Debug\net8.0\ShalowClonningApp.exe
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\bin\Debug\net8.0\ShalowClonningApp.deps.json
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\bin\Debug\net8.0\ShalowClonningApp.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\bin\Debug\net8.0\ShalowClonningApp.dll
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\bin\Debug\net8.0\ShalowClonningApp.pdb
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\obj\Debug\net8.0\ShalowClonningApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\obj\Debug\net8.0\ShalowClonningApp.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\obj\Debug\net8.0\ShalowClonningApp.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\obj\Debug\net8.0\ShalowClonningApp.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\obj\Debug\net8.0\ShalowClonningApp.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\obj\Debug\net8.0\ShalowClonningApp.dll
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\obj\Debug\net8.0\refint\ShalowClonningApp.dll
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\obj\Debug\net8.0\ShalowClonningApp.pdb
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\obj\Debug\net8.0\ShalowClonningApp.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\ShalowClonningApp\ShalowClonningApp\obj\Debug\net8.0\ref\ShalowClonningApp.dll

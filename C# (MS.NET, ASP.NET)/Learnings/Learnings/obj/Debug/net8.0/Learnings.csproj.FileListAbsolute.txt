@@ -1,0 +1,14 @@
+C:\Users\anike\source\repos\Learnings\Learnings\bin\Debug\net8.0\Learnings.exe
+C:\Users\anike\source\repos\Learnings\Learnings\bin\Debug\net8.0\Learnings.deps.json
+C:\Users\anike\source\repos\Learnings\Learnings\bin\Debug\net8.0\Learnings.runtimeconfig.json
+C:\Users\anike\source\repos\Learnings\Learnings\bin\Debug\net8.0\Learnings.dll
+C:\Users\anike\source\repos\Learnings\Learnings\bin\Debug\net8.0\Learnings.pdb
+C:\Users\anike\source\repos\Learnings\Learnings\obj\Debug\net8.0\Learnings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anike\source\repos\Learnings\Learnings\obj\Debug\net8.0\Learnings.AssemblyInfoInputs.cache
+C:\Users\anike\source\repos\Learnings\Learnings\obj\Debug\net8.0\Learnings.AssemblyInfo.cs
+C:\Users\anike\source\repos\Learnings\Learnings\obj\Debug\net8.0\Learnings.csproj.CoreCompileInputs.cache
+C:\Users\anike\source\repos\Learnings\Learnings\obj\Debug\net8.0\Learnings.dll
+C:\Users\anike\source\repos\Learnings\Learnings\obj\Debug\net8.0\refint\Learnings.dll
+C:\Users\anike\source\repos\Learnings\Learnings\obj\Debug\net8.0\Learnings.pdb
+C:\Users\anike\source\repos\Learnings\Learnings\obj\Debug\net8.0\Learnings.genruntimeconfig.cache
+C:\Users\anike\source\repos\Learnings\Learnings\obj\Debug\net8.0\ref\Learnings.dll

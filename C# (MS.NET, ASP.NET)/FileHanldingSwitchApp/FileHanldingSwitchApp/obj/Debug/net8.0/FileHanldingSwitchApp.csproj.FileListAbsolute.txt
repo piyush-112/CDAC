@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\bin\Debug\net8.0\FileHanldingSwitchApp.exe
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\bin\Debug\net8.0\FileHanldingSwitchApp.deps.json
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\bin\Debug\net8.0\FileHanldingSwitchApp.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\bin\Debug\net8.0\FileHanldingSwitchApp.dll
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\bin\Debug\net8.0\FileHanldingSwitchApp.pdb
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\obj\Debug\net8.0\FileHanldingSwitchApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\obj\Debug\net8.0\FileHanldingSwitchApp.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\obj\Debug\net8.0\FileHanldingSwitchApp.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\obj\Debug\net8.0\FileHanldingSwitchApp.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\obj\Debug\net8.0\FileHanldingSwitchApp.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\obj\Debug\net8.0\FileHanldingSwitchApp.dll
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\obj\Debug\net8.0\refint\FileHanldingSwitchApp.dll
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\obj\Debug\net8.0\FileHanldingSwitchApp.pdb
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\obj\Debug\net8.0\FileHanldingSwitchApp.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\FileHanldingSwitchApp\FileHanldingSwitchApp\obj\Debug\net8.0\ref\FileHanldingSwitchApp.dll

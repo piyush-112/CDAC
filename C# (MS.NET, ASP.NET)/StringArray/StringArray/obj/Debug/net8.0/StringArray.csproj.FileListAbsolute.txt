@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\bin\Debug\net8.0\StringArray.exe
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\bin\Debug\net8.0\StringArray.deps.json
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\bin\Debug\net8.0\StringArray.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\bin\Debug\net8.0\StringArray.dll
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\bin\Debug\net8.0\StringArray.pdb
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\obj\Debug\net8.0\StringArray.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\obj\Debug\net8.0\StringArray.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\obj\Debug\net8.0\StringArray.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\obj\Debug\net8.0\StringArray.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\obj\Debug\net8.0\StringArray.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\obj\Debug\net8.0\StringArray.dll
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\obj\Debug\net8.0\refint\StringArray.dll
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\obj\Debug\net8.0\StringArray.pdb
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\obj\Debug\net8.0\StringArray.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\StringArray\StringArray\obj\Debug\net8.0\ref\StringArray.dll

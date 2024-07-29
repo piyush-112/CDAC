@@ -1,0 +1,150 @@
+#Assignment no-6
+
+show databases;
+use employee;
+show tables;
+create table worker(w_id int not null primary key auto_increment,f_name varchar(20),l_name varchar(20),salary double,j_date date,department char(10));
+insert into worker(w_id,f_name,l_name,salary,j_date,department) values (1,"Monia","Arora",100000,'2014-02-20','HR'),(2,"Niharika","Verma" ,80000 ,'2014-06-11',"Admin"),(003 ,"Vishal","Singhal",300000,'2014-02-20',"HR"),
+(4 ,"Amitabh" ,"Singh",500000 ,'2014-02-20',"Admin"),(5,"Vivek","Bhati", 500000 ,'2014-06-11',"Admin"),(6 ,"Vipul" ,"Diwan",200000 ,'2014-06-11',"Account"),(7, "Satish" ,"Kumar",75000,'2014-01-20',"Account"),
+(8 ,"Geetika" ,"Chauhan" ,90000 ,'2014-04-11',"Admin");
+select * from worker;
+
+ create table bonus(w_ref_id int not null primary key,bonus_date date,b_amt int(10));
+ alter table bonus drop primary key;
+ insert into bonus (w_ref_id,bonus_date,b_amt) values (1,'2016-02-20',5000),(2,'2016-06-11',3000),(3,'2016-02-20',4000),(1 ,'2016-02-20',4500),(2,'2016-06-11',3500);
+ select * from bonus;
+ #truncate table bonus;
+
+#create table title(w_ref_id int not null,w_title varchar(20),aff_date date, foreign key(w_ref_id) references bonus(w_ref_id));
+create table title(w_ref_id int not null,w_title varchar(20),aff_date date)
+insert into title(w_ref_id,w_title,aff_date) values (1 ,"Manager",'2016-02-20'),(2,"Executive",'2016-06-11'),(8,"Executive",'2016-06-11'),(5,"Manager",'2016-06-11'),(4,"Asst. Manager",'2016-06-11'),
+(7,"Executive", '2016-06-11'),(6,"Lead",'2016-06-11'),(3,"Lead",'2016-06-11');
+select * from title;
+
+#1. Write an SQL query to fetch “FIRST_NAME” from the Worker table using the  alias name <WORKER_NAME>
+select f_name as "Worker_Name" from worker;select * from title intersect select * from titleClone;
+
+#2. Write an SQL query to fetch “FIRST_NAME” from the Worker table in upper case.
+select upper(f_name) from worker;
+
+#3. Write an SQL query to fetch unique values of DEPARTMENT from the Worker table.
+select distinct(department) from worker;
+
+#4. Write an SQL query to print the first three characters of FIRST_NAME from the Worker table.
+select substring(f_name,1,3) from worker;
+
+#5. Write an SQL query to find the position of the alphabet (‘a’) in the first name  column ‘Amitabh’ from the Worker table.
+select locate('a',f_name) from worker where f_name="Amitabh";
+
+#6. Write an SQL query to print all Worker details from the Worker table order by FIRST_NAME Ascending.
+select * from worker order by f_name asc;
+
+#7. Write an SQL query to print all Worker details from the Worker table orselect * from title intersect select * from titleClone;
+select * from title intersect select * from titleClone;
+der by  FIRST_NAME Ascending and DEPARTMENT Descending. ------eee
+select * from worker order by f_name asc,department desc;
+
+#8. Write an SQL query to print details for Workers with the first names “Vipul” and “Satish” from the Worker table
+select * from worker where f_name in ("Vipul","Satish");
+
+#9. Write an SQL query to print details of workers excluding first names, “Vipul” and “Satish” from the Worker table
+select * from worker where f_name not in("Vipul","Satish");
+
+#10. Write an SQL query to print details of Workers with DEPARTMENT name as “Admin”.
+select * from worker where department in("Admin");
+
+#11. Write an SQL query to print details of the Workers whose FIRST_NAME contains ‘a’.
+select * from worker where f_name like '%a%';
+
+#12. Write an SQL query to print names of the Workers whose FIRST_NAME ends  with ‘a’.
+select * from worker where f_name like '%a';
+
+#13. Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘h’ and contains six alphabets.
+select * from worker where f_name like '_____h';
+
+#14. Write an SQL query to print details of the Workers whose SALARY lies between 100000 and 500000.
+select * from worker where salary in (100000,500000);
+
+#15. Write an SQL query to print details of the Workers who joined in Feb’2014.
+select * from worker where year(j_date)=2014 and month(j_date)=02;
+select * from worker where j_date like '%14-02%';
+
+#16. Write an SQL query to fetch the count of employees working in the department 'Admin’.
+select count(department) as count_of_emp from worker where department="Admin";
+
+#17. Write an SQL query to fetch worker names with salaries >= 50000 and <= 100000.
+select * from worker where (salary)>=50000 and (salary)<=100000;
+
+#18. Write an SQL query to fetch the no. of workers for each department in descending order. -------
+select count(*) as count,department from worker group by department order by department desc;
+
+#19. Write an SQL query to print details of the Workers who are also Managers.
+select w.f_name,w.l_name,w.department,t.w_title from worker as w inner join title as t on w.w_id=t.w_id where t.w_title="Manager";
+
+#20. Write an SQL query to fetch duplicate records having matching data in some fields of a table.
+select w.f_name,w.l_name,w.department,t.w_title from worker as w inner join title as t on w.w_id=t.w_id;
+select count(*) as count, department from worker group by department having count(*)>1;
+
+#21. Write an SQL query to show only odd rows from a table.
+select * from worker where mod(w_id,2)<>0;select w_id,f_name,l_name from worker where not exists (select * from bonus where worker.w_id=bonus.w_id);
+
+#22. Write an SQL query to show only even rows from a table.
+select * from worker where mod(w_id,2)=0;
+
+#23. Write an SQL query to clone a new table from another table.
+create table titleClone(w_ref_idC int not null,w_titleC varchar(20),aff_dateC date);
+insert into titleClone select * from title;
+select * from titleClone;
+
+#24. Write an SQL query to fetch intersecting records of previous two tables.-- condition for intersect is that noofcolumn(table1)=noofcolumn(table2);
+select * from title intersect select * from titleClone;
+
+#25. Write an SQL query to show records from one table that another table does not have.
+select * from worker where not exists (select * from bonus where worker.w_id=bonus.w_id);
+
+#26. Write an SQL query to show the top n (say 10) records of a table.
+select * from worker order by salary desc limit 5;
+
+#27. Write an SQL query to fetch the list of employees with the same salary.
+select w.salary, w.f_name from worker as w join worker as w1 on w.salary = w1.salary and w.f_name !=w1.f_name;
+
+#28. Write an SQL query to show the second-highest salary from a table.
+select * from worker where salary=(select salary from worker order by salary desc limit 1,1);
+
+#29. Write an SQL query to fetch intersecting records of two tables.
+select * from title intersect select * from titleClone;
+
+#30. Write an SQL query to fetch the first 50% of records from a table.
+select * from worker where w_id<=(select count(w_id)/2 from worker);
+
+#31. Write an SQL query to fetch the departments that have less than five people in them.\
+select department,count(*) as no_of_indept from worker group by department having count(w_id)>5;
+
+#32. Write an SQL query to show all departments along with the number of people in there.
+select department,count(*) as no_of_indept from worker group by department ;
+
+#33. Write an SQL query to show the last record from a table.
+select * from worker where w_id=(select count(w_id) from worker);
+
+#34. Write an SQL query to fetch the first row of a table.
+select * from worker where w_id=(select w_id from worker order by w_id limit 1);
+
+#35. Write an SQL query to fetch the last five records from a table.
+select * from worker where w_id>(select count(w_id)/2 from worker);
+
+#36. Write an SQL query to print the name of employees having the highest salary in each department.---
+select * from worker where salary=(select max(salary) from worker);
+select * from worker where salary=(select salary from worker order by salary desc limit 1,1);//(1,2)
+
+#37. Write an SQL query to fetch three max salaries from a table.
+select * from worker order by salary desc limit 1,3;
+
+#38. Write an SQL query to fetch departments along with the total salaries paid for each of them.
+select department, sum(salary) from worker group by department;
+
+#39. Write an SQL query to fetch the names of workers who earn the highest salary.
+select f_name from worker where salary =(select salary from worker order by salary desc limit 1,1);
+
+
+
+

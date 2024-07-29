@@ -1,0 +1,3 @@
+node_module
+# if you want to add all .txt  you directly do as
+*.txt

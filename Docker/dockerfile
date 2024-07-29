@@ -1,0 +1,91 @@
+# write a set instruction
+
+#give us to node inage for our project
+FROM node:latest
+
+RUN npm install -g nodemon
+
+#Here we dont copy into the ./app directory of the image to do so
+WORKDIR /app
+# COPY ./app dest
+
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
+
+
+#run or install the modules of our project like here we have a express
+#you can also do as RUN npm install
+RUN npm i
+
+#copy the whole files code into the image
+COPY . .
+
+#open the port  mention the port number that you enter at the time of the writting the program
+EXPOSE 8800
+
+# Run the code
+# CMD [ "node","index.js" ]
+CMD [ "npm","run","dev" ]
+
+#to Run the created docker imager
+# docker build -t basic-app .      //-t for giving the tag  i.e. desire app name   also you do to run  docker run basic-app
+# go to the docker desktop
+# go to continer 
+# click on the play button of the container assign desire port number(if we give 0 it allocat the random port and it will benefial for us )
+# n all and run the container
+# images are like the class of the java nad container like the object ,we can create as many as object i.e. container of the image
+
+
+# we all do is for 
+# To avoid the version udatation ,to avoid the system error "We create the Docker image.." and creating the image we run our project any
+# where without fear
+
+# To delete the image
+# docker image rm image-nm   //o/p as untagged  deleted 
+# docker image rm image-nm -f
+
+#  To delete the all the images ,container we use the command
+# docker system prune -a
+
+# To create the version of the image we do
+# docker build -t basic-app:v2 .
+
+# To run that version 2 command is:
+# docker run --name basic-app-container-v2 -p 8800:8800 basic-app-v2
+
+# docker volume=we can store data inside the appp permanantly,sync our data with imagaes
+# when we updation in our project it will automatically reflected inside our project
+# To do so we have to install nodemon inside our project(nodemon=autorestart the node server after successful updation)
+# RUN npm i -g nodemon
+# to crate the volume
+# docker run --name basic-container -p 8800:8800 --rm -v "D:/PG_CDA/PG_DAC/Docker:/app" basic-app
+# sirs comand for ru ning volume
+
+# AS we go along with our project the docker command get complex n it hard to remember that command n thats why docker come up with 
+# yaml file in which we write all complex command =>docker.yaml
+# services:
+#     img:
+#       build: .
+#       # container_name: basic-container
+#       ports:
+#         - 8800:8800
+            #  To run the compose yaml file ==> docker compose up
+
+cvcv
+# Share your image in docker hub
+# login into the dockerhub -> create repo -> see docker push command copy that middle appnm(heyak/node-pract-app) ->
+# open project terminal -> type command docker build -t heyak/node-pract-app .   -> it will create the image ->
+# type docker login ->(Login Succeeded) if you already do but not input your login id password  -> docker push heyak/node-pract-app  ->
+# it will upload your created images  
+# my docker profile https://hub.docker.com/u/heyak
+
+
+# To pull the uploaded image just open the uploaded image copy that path and paste into the terminal(docker pull heyak/node-pract-app)
+# it will download you can also ckeck on your docker desktop
+
+# To run you app on to the paly-with-docker website you have to create the new image
+# docker buildx build --platform linux/amd64 -t heyak/playwithdocker-img .
+# docker push heyak/playwithdocker-img
+
+# open play-eith-docker
+# login with docker-> create instance->write the pull command of our img ->docker run img-nm

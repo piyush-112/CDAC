@@ -1,0 +1,25 @@
+<!-- 10. JavaScript Program to Check Whether a String is Palindrome or Not -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Palindrome Number</title>
+</head>
+<body></body>
+<script>
+    const str=prompt("Enter the string:");
+    function isPalidrome(str){
+        let len=str.length;
+        for(let i=0;i<len/2;i++){
+            if(str[i]!==str[len-1-i]){
+                return false;
+            }
+        }
+        return true;
+    }
+    (isPalidrome(str))?document.write("Given string is palindrome"):document.write("Given string is not palindrome");
+
+</script>
+</html>

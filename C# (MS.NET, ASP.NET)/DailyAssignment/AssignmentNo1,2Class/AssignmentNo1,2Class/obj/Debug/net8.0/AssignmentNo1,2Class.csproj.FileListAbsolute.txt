@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\bin\Debug\net8.0\AssignmentNo1,2Class.exe
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\bin\Debug\net8.0\AssignmentNo1,2Class.deps.json
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\bin\Debug\net8.0\AssignmentNo1,2Class.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\bin\Debug\net8.0\AssignmentNo1,2Class.dll
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\bin\Debug\net8.0\AssignmentNo1,2Class.pdb
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\obj\Debug\net8.0\AssignmentNo1,2Class.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\obj\Debug\net8.0\AssignmentNo1,2Class.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\obj\Debug\net8.0\AssignmentNo1,2Class.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\obj\Debug\net8.0\AssignmentNo1,2Class.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\obj\Debug\net8.0\AssignmentNo1,2Class.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\obj\Debug\net8.0\AssignmentNo1,2Class.dll
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\obj\Debug\net8.0\refint\AssignmentNo1,2Class.dll
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\obj\Debug\net8.0\AssignmentNo1,2Class.pdb
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\obj\Debug\net8.0\AssignmentNo1,2Class.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo1,2Class\AssignmentNo1,2Class\obj\Debug\net8.0\ref\AssignmentNo1,2Class.dll

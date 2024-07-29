@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\bin\Debug\net8.0\FileHandling.exe
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\bin\Debug\net8.0\FileHandling.deps.json
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\bin\Debug\net8.0\FileHandling.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\bin\Debug\net8.0\FileHandling.dll
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\bin\Debug\net8.0\FileHandling.pdb
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\obj\Debug\net8.0\FileHandling.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\obj\Debug\net8.0\FileHandling.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\obj\Debug\net8.0\FileHandling.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\obj\Debug\net8.0\FileHandling.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\obj\Debug\net8.0\FileHandling.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\obj\Debug\net8.0\FileHandling.dll
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\obj\Debug\net8.0\refint\FileHandling.dll
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\obj\Debug\net8.0\FileHandling.pdb
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\obj\Debug\net8.0\FileHandling.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\FileHandling\FileHandling\obj\Debug\net8.0\ref\FileHandling.dll

@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\bin\Debug\net8.0\AssignmentNo4.2Array.exe
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\bin\Debug\net8.0\AssignmentNo4.2Array.deps.json
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\bin\Debug\net8.0\AssignmentNo4.2Array.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\bin\Debug\net8.0\AssignmentNo4.2Array.dll
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\bin\Debug\net8.0\AssignmentNo4.2Array.pdb
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\obj\Debug\net8.0\AssignmentNo4.2Array.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\obj\Debug\net8.0\AssignmentNo4.2Array.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\obj\Debug\net8.0\AssignmentNo4.2Array.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\obj\Debug\net8.0\AssignmentNo4.2Array.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\obj\Debug\net8.0\AssignmentNo4.2Array.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\obj\Debug\net8.0\AssignmentNo4.2Array.dll
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\obj\Debug\net8.0\refint\AssignmentNo4.2Array.dll
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\obj\Debug\net8.0\AssignmentNo4.2Array.pdb
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\obj\Debug\net8.0\AssignmentNo4.2Array.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssignmentNo4.2Array\AssignmentNo4.2Array\obj\Debug\net8.0\ref\AssignmentNo4.2Array.dll

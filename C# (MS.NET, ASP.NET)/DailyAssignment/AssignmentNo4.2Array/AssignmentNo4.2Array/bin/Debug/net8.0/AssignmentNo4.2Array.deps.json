@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AssignmentNo4.2Array/1.0.0": {
+        "runtime": {
+          "AssignmentNo4.2Array.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AssignmentNo4.2Array/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

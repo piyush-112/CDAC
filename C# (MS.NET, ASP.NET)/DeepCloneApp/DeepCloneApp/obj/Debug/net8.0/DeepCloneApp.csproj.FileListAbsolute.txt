@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\bin\Debug\net8.0\DeepCloneApp.exe
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\bin\Debug\net8.0\DeepCloneApp.deps.json
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\bin\Debug\net8.0\DeepCloneApp.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\bin\Debug\net8.0\DeepCloneApp.dll
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\bin\Debug\net8.0\DeepCloneApp.pdb
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\obj\Debug\net8.0\DeepCloneApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\obj\Debug\net8.0\DeepCloneApp.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\obj\Debug\net8.0\DeepCloneApp.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\obj\Debug\net8.0\DeepCloneApp.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\obj\Debug\net8.0\DeepCloneApp.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\obj\Debug\net8.0\DeepCloneApp.dll
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\obj\Debug\net8.0\refint\DeepCloneApp.dll
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\obj\Debug\net8.0\DeepCloneApp.pdb
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\obj\Debug\net8.0\DeepCloneApp.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\DeepCloneApp\DeepCloneApp\obj\Debug\net8.0\ref\DeepCloneApp.dll

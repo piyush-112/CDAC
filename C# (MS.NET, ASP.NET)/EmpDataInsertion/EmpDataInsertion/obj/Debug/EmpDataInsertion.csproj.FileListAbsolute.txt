@@ -1,0 +1,7 @@
+D:\PG_CDAC\PG_DAC\C#\EmpDataInsertion\EmpDataInsertion\bin\Debug\EmpDataInsertion.exe.config
+D:\PG_CDAC\PG_DAC\C#\EmpDataInsertion\EmpDataInsertion\bin\Debug\EmpDataInsertion.exe
+D:\PG_CDAC\PG_DAC\C#\EmpDataInsertion\EmpDataInsertion\bin\Debug\EmpDataInsertion.pdb
+D:\PG_CDAC\PG_DAC\C#\EmpDataInsertion\EmpDataInsertion\obj\Debug\EmpDataInsertion.csproj.AssemblyReference.cache
+D:\PG_CDAC\PG_DAC\C#\EmpDataInsertion\EmpDataInsertion\obj\Debug\EmpDataInsertion.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\EmpDataInsertion\EmpDataInsertion\obj\Debug\EmpDataInsertion.exe
+D:\PG_CDAC\PG_DAC\C#\EmpDataInsertion\EmpDataInsertion\obj\Debug\EmpDataInsertion.pdb

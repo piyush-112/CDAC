@@ -1,0 +1,168 @@
+//Procedure with if-else
+delimiter &&
+create procedure find1(in num int, out type varchar(10))
+begin
+   set type='';
+   if(num>0) then
+      set type='positive';
+   else
+      set type='negative';
+   end if;
+   select type;
+end &&
+delimiter;
+
+Q1.create a new column that state the student got first class or not
+mysql> select roll,name,if(marks>90 and class='yes','YES',marks) as first_class from student;
++------+------------+-------------+
+| roll | name       | first_class |
++------+------------+-------------+
+|    1 | Ram        | 99          |
+|    2 | Lakshaman  | 88          |
+|    3 | Bharata    | 95          |
+|    4 | Shatrughna | 80          |
+|    5 | Hanuman    | 100         |
++------+------------+-------------+
+5 rows in set (0.00 sec)
+
+//Create a new column which state that grade of the student
+delimiter &&
+create proceduce grade(in marks int, out grade varchar(20))
+begin 
+    set grade='';
+    if(marks>75) then
+        set grade='A+ grade';
+    else if()
+    
+select name,marks,  
+     case 
+         when marks > 75 then 'A+'
+         when marks > 60 then 'A Grade'
+         when marks > 55 then 'B+'
+         when marks > 50 then 'B'
+         when marks >40 then 'C grade'
+         else 'F Grade'
+     end as grade
+from student;
+
+mysql> select name,marks,  
+    ->      case 
+    ->          when marks > 75 then 'A+'
+    ->          when marks > 60 then 'A Grade'
+    ->          when marks > 55 then 'B+'
+    ->          when marks > 50 then 'B'
+    ->          when marks >40 then 'C grade'
+    ->          else 'F Grade'
+    ->      end as grade
+    -> from student;
++------------+-------+-------+
+| name       | marks | grade |
++------------+-------+-------+
+| Ram        |    99 | A+    |
+| Lakshaman  |    88 | A+    |
+| Bharata    |    95 | A+    |
+| Shatrughna |    80 | A+    |
+| Hanuman    |   100 | A+    |
++------------+-------+-------+
+5 rows in set (0.00 sec)
+
+
+//Create a procedure to find the addition of first 10 natural number;
+delimiter &&
+create procedure N_sum(in start int ,in end int, out sum int)
+begin
+     set sum=0;
+     while(start<=end) do
+         set sum=sum+start;
+         set start=start+1;
+     end while;
+     select sum;
+end &&
+delimiter;
+
+mysql> delimiter &&
+mysql> create procedure N_sum(in start int ,in end int, out sum int)
+    -> begin
+    ->      set sum=0;
+    ->      while(start<=end) do
+    ->          set sum=sum+start;
+    ->          set start=start+1;
+    ->      end while;
+    ->      select sum;
+    -> end &&
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> delimiter ;
+mysql> set @start=0;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> set @end=10;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> set @result=0;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> call N_sum(@start,@end,@result);
++------+
+| sum  |
++------+
+|   55 |
++------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+
+//Q4Check the number is even or not set result = '';
+DELIMITER &&
+
+CREATE PROCEDURE EvenOddCheck(IN num INT, OUT result VARCHAR(100))
+BEGIN
+    DECLARE rem INT;
+    SET rem = num % 2;
+    
+    IF (rem = 0) THEN
+        SET result = 'EVEN Number';
+    ELSE
+        SET result = 'ODD';
+    END IF;
+    
+    SELECT result;
+END &&
+
+DELIMITER ;
+
+mysql> DELIMITER &&
+mysql> 
+mysql> CREATE PROCEDURE EvenOddCheck(IN num INT, OUT result VARCHAR(100))
+    -> BEGIN
+    ->     DECLARE rem INT;
+    ->     SET rem = num % 2;
+    ->     
+    ->     IF (rem = 0) THEN
+    ->         SET result = 'EVEN Number';
+    ->     ELSE
+    ->         SET result = 'ODD';
+    ->     END IF;
+    ->     
+    ->     SELECT result;
+    -> END &&
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> 
+mysql> DELIMITER ;
+mysql> set @result='';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> call EvenOddCheck(7,@result);
++--------+
+| result |
++--------+
+| ODD    |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+         
+         

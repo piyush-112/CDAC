@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\bin\Debug\net8.0\AssigmentNo5Collection.exe
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\bin\Debug\net8.0\AssigmentNo5Collection.deps.json
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\bin\Debug\net8.0\AssigmentNo5Collection.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\bin\Debug\net8.0\AssigmentNo5Collection.dll
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\bin\Debug\net8.0\AssigmentNo5Collection.pdb
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\obj\Debug\net8.0\AssigmentNo5Collection.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\obj\Debug\net8.0\AssigmentNo5Collection.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\obj\Debug\net8.0\AssigmentNo5Collection.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\obj\Debug\net8.0\AssigmentNo5Collection.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\obj\Debug\net8.0\AssigmentNo5Collection.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\obj\Debug\net8.0\AssigmentNo5Collection.dll
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\obj\Debug\net8.0\refint\AssigmentNo5Collection.dll
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\obj\Debug\net8.0\AssigmentNo5Collection.pdb
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\obj\Debug\net8.0\AssigmentNo5Collection.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\DailyAssignment\AssigmentNo5Collection\AssigmentNo5Collection\obj\Debug\net8.0\ref\AssigmentNo5Collection.dll

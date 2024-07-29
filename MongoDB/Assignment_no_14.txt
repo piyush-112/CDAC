@@ -1,0 +1,181 @@
+//Assignment no 14
+test> db.books.insert({refno:5,name:'mysql',author:'shrikant',coAuthor:'nitin',pages:330,price:630})
+
+test> db.books.find()
+[
+  {
+    _id: ObjectId('6632884c8038ff00dc2202d8'),
+    refno: 1,
+    name: 'python prog',
+    author: 'sham',
+    coAuthor: 'rakesh',
+    pages: 350,
+    price: 450
+  },
+  {
+    _id: ObjectId('6632898c8038ff00dc2202d9'),
+    refno: 2,
+    name: 'javapro',
+    author: 'amita',
+    coAuthor: 'rakesh',
+    pages: 300,
+    price: 500
+  },
+  {
+    _id: ObjectId('663289d08038ff00dc2202da'),
+    refno: 3,
+    name: 'htmlpro',
+    author: 'amita',
+    coAuthor: 'shyam',
+    pages: 225,
+    price: 300
+  },
+  {
+    _id: ObjectId('66328a30a99c5bb79c2202d8'),
+    refno: 4,
+    name: 'mongodb',
+    author: 'shyam',
+    pages: 440,
+    price: 500
+  },
+  {
+    _id: ObjectId('66328a69a99c5bb79c2202d9'),
+    refno: 5,
+    name: 'mysql',
+    author: 'shrikant',
+    coAuthor: 'nitin',
+    pages: 330,
+    price: 630
+  }
+]
+
+Q.1 Count how manyb books wrote by Amita 
+test> db.books.count({author:'amita'})
+DeprecationWarning: Collection.count() is deprecated. Use countDocuments or estimatedDocumentCount.
+2
+
+Q.2 Count the total books written by shaym
+test> db.books.count({author:'shyam'})
+1
+
+Q.3 how many authors books are available in labrary;
+test> db.runCommand({distinct:"books", key:"author"})
+{ values: [ 'amita', 'shrikant', 'shyam' ], ok: 1 }
+
+
+O.4find out the average price of the book in labrary
+db.books.aggregate([
+  { $group: { _id: null, averagePrice: { $avg: "$price" } } }
+]);
+test> db.books.aggregate([
+...   { $group: { _id: null, averagePrice: { $avg: "$price" } } }
+... ]);
+[ { _id: null, averagePrice: 476 } ]
+
+Q.5 find the total no of pages of books authored by shyam
+test> db.books.aggregate([
+...   { $match: { author: "shyam" } },
+...   { $group: { _id: null, totalPages: { $sum: "$pages" } } }
+... ]);
+[ { _id: null, totalPages: 790 } ]
+
+
+Q.6 sort the book by descending order of pages
+test> db.books.find().sort({ pages: -1 });   //descending
+test> db.books.find().sort({ pages: 1 });    //ascending
+
+Q.7 change the id of book 'mongodb' to 1014
+db.books.update({refno:4},{$set:{refno:1014,name:'mongodb',author:'shyam', coAuthor:'',pages:440,price:500}},{update:true})
+test> db.books.update({refno:4},{$set:{refno:1014,name:'mongodb',author:'shyam', coAuthor:'',pages:440,price:500}},{update:true})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+test> db.books.find()
+
+Q.8 find the books whos cost is above 400
+test> db.books.find({price:{$gt:400}},{price:1, _id:0})
+[ { price: 450 }, { price: 500 }, { price: 500 }, { price: 630 } ]
+
+Q.9 Delete the coAuthor of book'mysql';
+test> db.books.remove({coAuther:'mysql'})
+{ acknowledged: true, deletedCount: 0 }
+
+
+//Second one
+test> db.cricketer.insert({name:'Ajay',matches:58,runs:7009,catch:32,})
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6632a1c7bdd8efa34d2202d8') }
+}
+test> db.cricketer.insert({name:'Vijay',matches:32,runs:4205,catch:11,})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6632a1ecbdd8efa34d2202d9') }
+}
+test> db.cricketer.insert({name:'Ram',matches:230,runs:6390,catch:105})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6632a210bdd8efa34d2202da') }
+}
+test> db.cricketer.insert({name:'Ahemad',matches:192,runs:5502,wicket:13,catch:111,stumping:11})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6632a240bdd8efa34d2202db') }
+}
+test> db.cricketer.insert({name:'Akshay',matches:101,runs:699,wicket:89,catch:71,})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6632a274bdd8efa34d2202dc') }
+}
+//how to remove the null(like :stumping:'') from the collections
+test> db.cricketer.find()
+
+Q.1 find the information all bowlers
+test> db.cricketer.find({wicket:{$exists:true}})
+
+Q.2 find the information about the wicketkeepers only
+db.cricketer.find({stumping:{$exists:true}})
+
+Q.3 delete the wicket for the player who has stumpings.
+db.cricketer.update({stumping:{$exists:true}},{$unset:{wicket:1}})
+Q.4 Update the matches and wicket of the player 'Ram' to 61 and 71
+db.cricketer.update({name:"Ram"},{$set:{name:'Ram',matches:61,runs:6390,wicket:71,catch:105}},{update:true})
+test> db.cricketer.update({name:"Ram"},{$set:{matches:61,runs:6390,wicket:71,catch:105}},{update:true})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+test> db.cricketer.find()
+
+Q.5 Print the information of the players who have taken more than 100 catches
+db.cricketer.find({catch:{$gt:100}})
+test> db.cricketer.find({catch:{$gt:100}})
+[
+  {
+    _id: ObjectId('6632a210bdd8efa34d2202da'),
+    name: 'Ram',
+    matches: 61,
+    runs: 6390,
+    wicket: 71,
+    catch: 105,
+    stumping: ''
+  },
+  {
+    _id: ObjectId('6632a240bdd8efa34d2202db'),
+    name: 'Ahemad',
+    matches: 192,
+    runs: 5502,
+    wicket: 13,
+    catch: 111,
+    stumping: 11
+  }
+]
+

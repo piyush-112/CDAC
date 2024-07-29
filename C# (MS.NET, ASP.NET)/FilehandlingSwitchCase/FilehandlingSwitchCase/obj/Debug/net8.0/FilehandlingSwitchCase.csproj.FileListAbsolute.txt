@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\bin\Debug\net8.0\FilehandlingSwitchCase.exe
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\bin\Debug\net8.0\FilehandlingSwitchCase.deps.json
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\bin\Debug\net8.0\FilehandlingSwitchCase.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\bin\Debug\net8.0\FilehandlingSwitchCase.dll
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\bin\Debug\net8.0\FilehandlingSwitchCase.pdb
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\obj\Debug\net8.0\FilehandlingSwitchCase.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\obj\Debug\net8.0\FilehandlingSwitchCase.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\obj\Debug\net8.0\FilehandlingSwitchCase.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\obj\Debug\net8.0\FilehandlingSwitchCase.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\obj\Debug\net8.0\FilehandlingSwitchCase.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\obj\Debug\net8.0\FilehandlingSwitchCase.dll
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\obj\Debug\net8.0\refint\FilehandlingSwitchCase.dll
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\obj\Debug\net8.0\FilehandlingSwitchCase.pdb
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\obj\Debug\net8.0\FilehandlingSwitchCase.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\FilehandlingSwitchCase\FilehandlingSwitchCase\obj\Debug\net8.0\ref\FilehandlingSwitchCase.dll

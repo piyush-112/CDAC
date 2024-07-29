@@ -1,0 +1,7 @@
+D:\PG_CDAC\PG_DAC\C#\EmpUserInputAllCRUDApp\EmpUserInputAllCRUDApp\bin\Debug\EmpUserInputAllCRUDApp.exe.config
+D:\PG_CDAC\PG_DAC\C#\EmpUserInputAllCRUDApp\EmpUserInputAllCRUDApp\bin\Debug\EmpUserInputAllCRUDApp.exe
+D:\PG_CDAC\PG_DAC\C#\EmpUserInputAllCRUDApp\EmpUserInputAllCRUDApp\bin\Debug\EmpUserInputAllCRUDApp.pdb
+D:\PG_CDAC\PG_DAC\C#\EmpUserInputAllCRUDApp\EmpUserInputAllCRUDApp\obj\Debug\EmpUserInputAllCRUDApp.csproj.AssemblyReference.cache
+D:\PG_CDAC\PG_DAC\C#\EmpUserInputAllCRUDApp\EmpUserInputAllCRUDApp\obj\Debug\EmpUserInputAllCRUDApp.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\EmpUserInputAllCRUDApp\EmpUserInputAllCRUDApp\obj\Debug\EmpUserInputAllCRUDApp.exe
+D:\PG_CDAC\PG_DAC\C#\EmpUserInputAllCRUDApp\EmpUserInputAllCRUDApp\obj\Debug\EmpUserInputAllCRUDApp.pdb

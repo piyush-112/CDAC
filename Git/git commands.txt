@@ -1,0 +1,38 @@
+//Anikiet Github Demo
+
+git clone
+git init
+git brach
+git checkout main
+vi Main.java//Write ehole code into it
+git status
+git add .
+git commit -m "fe commit"
+git push
+
+//Create brach into main
+git branch
+git checkout -b Aniket
+vi F1.java //write code into it
+git status
+git add .
+git commit -m "F1 commit"
+git push origin Aniket
+ 
+ //create 2 Branch 
+ git branch
+git checkout -b Ram
+vi F2.java //write code into it
+git status
+git add .
+git commit -m "F2 commit"
+git push origin Ram
+
+//merge the branch into main
+git branch
+git checkout Aniket
+git push origin main
+git checkout Ram
+git push origin main
+
+//lastly you got the request on git follow the steps accordingly

@@ -1,0 +1,8 @@
+package FuelEnum;
+
+public enum FEnum {
+	PETROL,EV,CNG;
+	public String toString() {
+		return name().toUpperCase();
+	}
+}

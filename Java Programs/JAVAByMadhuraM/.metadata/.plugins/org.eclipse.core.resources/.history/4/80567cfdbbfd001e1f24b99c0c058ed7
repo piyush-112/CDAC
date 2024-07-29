@@ -1,0 +1,12 @@
+package Lambda;
+
+public class SubstractApp {
+
+	public static void main(String[] args) {
+		Subtract sub=(int a,int b)->{
+			return a-b;
+		};
+		}
+	}
+
+}

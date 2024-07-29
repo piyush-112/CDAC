@@ -1,0 +1,180 @@
+//Assignment no 11 |April,27,24
+
+Problem-1
+Create a product table with following attributes in it.
+Product ID, Product type, Name and cost
+Insert at least 8 tuples in it.
+Write a function to find the final cost of the product based on following conditions.
+1. If type = Furniture then gst = 12%
+2. If type = Electronics then gst = 18%
+3. If type = Stationary then gst = 6%
+4. Zero otherwise
+mysql> create table product(Product_ID int, Product_type varchar(50), Name varchar(50), cost double);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into product values(101,'FUR','Chair',1200);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from product;
++------------+--------------+----------+------+
+| Product_ID | Product_type | Name     | cost |
++------------+--------------+----------+------+
+|        101 | FUR          | Chair    | 1200 |
+|        102 | FUR          | Bed      | 1500 |
+|        103 | ELE          | Mobile   | 2000 |
+|        104 | ELE          | TV       | 3000 |
+|        105 | STS          | NoteBook | 5000 |
+|        106 | STS          | Pen      |  300 |
++------------+--------------+----------+------+
+6 rows in set (0.00 sec)
+
+
+delimiter &&
+create function calculateGST(type varchar(10),cost float)
+returns float
+DETERMINISTIC
+begin
+     declare final_cost float default 0.0;
+     if(type = 'FUR') then
+          set final_cost = cost * 0.12 + cost;
+     elseif(type = 'ELE') then
+          set final_cost = cost * 0.18 + cost;
+     elseif(type = 'STS') then
+          set final_cost = cost * 0.06 + cost;
+     else
+          set final_cost =cost;
+     end if;
+     return final_cost;
+ end &&
+ delimiter ; 
+ 
+ mysql> delimiter &&
+mysql> create function calculateGST(type varchar(10),cost float)
+    -> returns float
+    -> DETERMINISTIC
+    -> begin
+    ->      declare final_cost float default 0.0;
+    ->      if(type = 'FUR') then
+    ->           set final_cost = cost * 0.12 + cost;
+    ->      elseif(type = 'ELE') then
+    ->           set final_cost = cost * 0.18 + cost;
+    ->      elseif(type = 'STS') then
+    ->           set final_cost = cost * 0.06 + cost;
+    ->      else
+    ->           set final_cost =cost;
+    ->      end if;
+    ->      return final_cost;
+    ->  end &&
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> delimiter ;
+mysql> select *,calulateGST(Product_type,cost) as Final_cost from product;
+ERROR 1305 (42000): FUNCTION collegeAK.calulateGST does not exist
+mysql> select *,calculateGST(Product_type,cost) as Final_cost from product;
++------------+--------------+----------+------+------------+
+| Product_ID | Product_type | Name     | cost | Final_cost |
++------------+--------------+----------+------+------------+
+|        101 | FUR          | Chair    | 1200 |       1344 |
+|        102 | FUR          | Bed      | 1500 |       1680 |
+|        103 | ELE          | Mobile   | 2000 |       2360 |
+|        104 | ELE          | TV       | 3000 |       3540 |
+|        105 | STS          | NoteBook | 5000 |       5300 |
+|        106 | STS          | Pen      |  300 |        318 |
++------------+--------------+----------+------+------------+
+6 rows in set (0.00 sec)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Problem-2
+Create a employees table with following attributes in it.
+Employee id, Employee name, Salary, Department, Age, Experience
+Insert at least 8 tuples in it.
+Write a function to find the gross salary of the employee based on the below
+conditions:
+1. If experience is less than 3 then no DA/HRA given.
+2. If experience is greater than or equal to 3 and less than 8 then no DA=30% of
+salary and HRA is 5% of Salary.
+3. If experience is greater than or equal to 8 then no DA=50% of salary and HRA is
+5% of Salary.
+
+mysql> create table employees(Employee_id int, Employee_name varchar(50), Salary double, Department varchar(50), Age int, Experience int );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into employees values(101,'Ram',50000,'HR',23,12);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from employees;
++-------------+---------------+--------+--------------+------+------------+
+| Employee_id | Employee_name | Salary | Department   | Age  | Experience |
++-------------+---------------+--------+--------------+------+------------+
+|         101 | Ram           |  50000 | HR           |   23 |         12 |
+|         102 | Shabari       |  30000 | IT           |   22 |          0 |
+|         103 | Lakshamana    |  45000 | Distribution |   23 |          6 |
+|         104 | Bharata       |  49000 | HR           |   25 |          5 |
+|         105 | Dasharatha    | 100000 | IT           |   33 |         14 |
+|         106 | Hanuman       |  60000 | Testing      |   28 |          7 |
++-------------+---------------+--------+--------------+------+------------+
+6 rows in set (0.00 sec)
+
+delimiter &&
+create function cal_sal(experiecne int,sal float)
+returns float
+deterministic
+begin
+    declare salary float default 0;
+    declare da float ;
+    declare hra float;
+    
+    if experiecne < 3 then
+        set salary = sal;
+    elseif(experiecne >= 3 and experiecne < 8) then
+        set da = sal * 0.3;
+        set hra = sal * 0.05;
+        set salary = sal + da + hra;
+    else
+        set da = sal * 0.5;
+        set hra =sal * 0.05;
+        set salary =sal + da + hra;
+    end if;
+    return salary;
+end &&
+delimiter ;
+
+mysql> delimiter &&
+mysql> create function cal_sal(experiecne int,sal float)
+    -> returns float
+    -> deterministic
+    -> begin
+    ->     declare salary float default 0;
+    ->     declare da float ;
+    ->     declare hra float;
+    ->     
+    ->     if experiecne < 3 then
+    ->         set salary = sal;
+    ->     elseif(experiecne >= 3 and experiecne < 8) then
+    ->         set da = sal * 0.3;
+    ->         set hra = sal * 0.05;
+    ->         set salary = sal + da + hra;
+    ->     else
+    ->         set da = sal * 0.5;
+    ->         set hra =sal * 0.05;
+    ->         set salary =sal + da + hra;
+    ->     end if;
+    ->     return salary;
+    -> end &&
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> delimiter ;
+mysql> select *,cal_sal(Experience,Salary) as Gross_Salary from employees;
++-------------+---------------+--------+--------------+------+------------+--------------+
+| Employee_id | Employee_name | Salary | Department   | Age  | Experience | Gross_Salary |
++-------------+---------------+--------+--------------+------+------------+--------------+
+|         101 | Ram           |  50000 | HR           |   23 |         12 |        77500 |
+|         102 | Shabari       |  30000 | IT           |   22 |          0 |        30000 |
+|         103 | Lakshamana    |  45000 | Distribution |   23 |          6 |        60750 |
+|         104 | Bharata       |  49000 | HR           |   25 |          5 |        66150 |
+|         105 | Dasharatha    | 100000 | IT           |   33 |         14 |       155000 |
+|         106 | Hanuman       |  60000 | Testing      |   28 |          7 |        81000 |
++-------------+---------------+--------+--------------+------+------------+--------------+
+6 rows in set (0.00 sec)
+
+

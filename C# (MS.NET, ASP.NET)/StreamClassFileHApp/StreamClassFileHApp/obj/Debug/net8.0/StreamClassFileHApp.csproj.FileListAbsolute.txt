@@ -1,0 +1,15 @@
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\bin\Debug\net8.0\StreamClassFileHApp.exe
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\bin\Debug\net8.0\StreamClassFileHApp.deps.json
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\bin\Debug\net8.0\StreamClassFileHApp.runtimeconfig.json
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\bin\Debug\net8.0\StreamClassFileHApp.dll
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\bin\Debug\net8.0\StreamClassFileHApp.pdb
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\obj\Debug\net8.0\StreamClassFileHApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\obj\Debug\net8.0\StreamClassFileHApp.AssemblyInfoInputs.cache
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\obj\Debug\net8.0\StreamClassFileHApp.AssemblyInfo.cs
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\obj\Debug\net8.0\StreamClassFileHApp.csproj.CoreCompileInputs.cache
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\obj\Debug\net8.0\StreamClassFileHApp.sourcelink.json
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\obj\Debug\net8.0\StreamClassFileHApp.dll
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\obj\Debug\net8.0\refint\StreamClassFileHApp.dll
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\obj\Debug\net8.0\StreamClassFileHApp.pdb
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\obj\Debug\net8.0\StreamClassFileHApp.genruntimeconfig.cache
+D:\PG_CDAC\PG_DAC\C#\StreamClassFileHApp\StreamClassFileHApp\obj\Debug\net8.0\ref\StreamClassFileHApp.dll

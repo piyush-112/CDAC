@@ -1,0 +1,140 @@
+//Create a table product as below:
++------+------------+-------+
+| type | name | cost |
++------+------------+-------+
+| FUR | Chair | 1500 |
+| FUR | Cupboard | 15000 |
+| ELE | Mobile | 25000 |
+| FUR | Table | 6500 |
+| ELE | Television | 18500 |
+| STA | Notebook | 45 |
+| STA | Stapler | 40 |
++------+------------+-------+
+Create following triggers:
+
+1. If the data entry has made for a negative cost then make is positive and insert
+it.
+
+delimiter &&
+create trigger before_insert_product
+before insert on product
+for each row
+begin
+     if new.cost < 0 then
+          set new.cost = abs(new.cost);
+      end if;
+end &&
+delimiter ;
+
+mysql> select * from product;
++------------+--------------+----------+------+
+| Product_ID | Product_type | Name     | cost |
++------------+--------------+----------+------+
+|        101 | FUR          | Chair    | 1200 |
+|        102 | FUR          | Bed      | 1500 |
+|        103 | ELE          | Mobile   | 2000 |
+|        104 | ELE          | TV       | 3000 |
+|        105 | STS          | NoteBook | 5000 |
+|        106 | STS          | Pen      |  300 |
++------------+--------------+----------+------+
+6 rows in set (0.00 sec)
+
+mysql> delimiter &&
+mysql> create trigger before_insert_product
+    -> before insert on product
+    -> for each row
+    -> begin
+    ->      if new.cost < 0 then
+    ->           set new.cost = abs(new.cost);
+    ->       end if;
+    -> end &&
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> delimiter ;
+mysql> insert into product values(107,"STS","Eraser",-2000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from product;
++------------+--------------+----------+------+
+| Product_ID | Product_type | Name     | cost |
++------------+--------------+----------+------+
+|        101 | FUR          | Chair    | 1200 |
+|        102 | FUR          | Bed      | 1500 |
+|        103 | ELE          | Mobile   | 2000 |
+|        104 | ELE          | TV       | 3000 |
+|        105 | STS          | NoteBook | 5000 |
+|        106 | STS          | Pen      |  300 |
+|        107 | STS          | Eraser   | 2000 |
++------------+--------------+----------+------+
+7 rows in set (0.00 sec)
+
+Q.2. Make a backup of the data every time user enters new information in the
+table.
+//create new table with the timestamp for taking backup
+mysql> create table product_backup1(Product_id int,Product_type varchar(20),Name varchar(50),cost double);
+Query OK, 0 rows affected (0.02 sec)
+
+//create the trigger
+delimiter &&
+create trigger after_insert_product1
+after insert on product
+for each row
+begin
+     insert into product_backup1 values(new.Product_id,new.Product_type,new.Name,new.cost);
+end &&
+delimiter ;
+
+mysql> insert into product values(107,"STS","Eraser",2000);
+mysql> select * from product_backup;
+    -> &&
++------------+--------------+--------+------+
+| Product_ID | Product_type | Name   | cost |
++------------+--------------+--------+------+
+|        107 | STS          | Eraser | 2000 |
++------------+--------------+--------+------+
+1 row in set (0.00 sec)
+
+show databases;
+use employee;
+create table product(type varchar(30),name varchar(50),cost int);
+insert into product values("FUR","Chair",1500 ),
+("FUR","Cupboard",15000),
+("ELE","Mobile",25000),
+( "FUR","Table",6500 ),
+( "ELE","Television",18500),
+( "STA","Notebook",45 ),
+(" STA"," Stapler", 40);
+select * from product;
+
+-- 3. Create a log file when user makes the changes in the cost of the product,record it.alter
+-- insert into p_cost_log() select * from product where 1=3;
+
+create table p_cost_log(type varchar(30),old_cost int,new_cost int);
+
+delimiter &&
+create trigger after_update_product_cost
+after update on product for each row
+begin
+     insert into log values(user(),now(),old.cost,new.cost);
+end &&
+delimiter ;
+
+drop trigger after_update_product_cost;
+
+update product set cost=88 where name ="Stapler";
+
+select * from log;
+
+-- 4. After deleting any entry from table, create a variable that contains the type of product which has recently deleted. 
+
+delimiter &&
+create trigger after_delete_product
+after delete on product for each row
+begin
+    set @var=concat("You delete product entry of name:",old.name);
+end &&
+delimiter ;
+
+delete from product where name="Table";
+
+select @var;

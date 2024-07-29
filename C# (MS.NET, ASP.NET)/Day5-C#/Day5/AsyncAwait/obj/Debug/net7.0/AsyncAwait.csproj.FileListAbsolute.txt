@@ -1,0 +1,14 @@
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\bin\Debug\net7.0\AsyncAwait.exe
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\bin\Debug\net7.0\AsyncAwait.deps.json
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\bin\Debug\net7.0\AsyncAwait.runtimeconfig.json
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\bin\Debug\net7.0\AsyncAwait.dll
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\bin\Debug\net7.0\AsyncAwait.pdb
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\obj\Debug\net7.0\AsyncAwait.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\obj\Debug\net7.0\AsyncAwait.AssemblyInfoInputs.cache
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\obj\Debug\net7.0\AsyncAwait.AssemblyInfo.cs
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\obj\Debug\net7.0\AsyncAwait.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\obj\Debug\net7.0\AsyncAwait.dll
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\obj\Debug\net7.0\refint\AsyncAwait.dll
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\obj\Debug\net7.0\AsyncAwait.pdb
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\obj\Debug\net7.0\AsyncAwait.genruntimeconfig.cache
+D:\Trainings\ActsDec2023\Day7\AsyncAwait\obj\Debug\net7.0\ref\AsyncAwait.dll
